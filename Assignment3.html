@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<title>Hero</title>
+
+<style>
+
+*{
+    margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#f8c291,#f6b93b);
+}
+
+/* Card */
+.hero{
+width:900px;
+height:450px;
+background:#eaeaea;
+border-radius:20px;
+box-shadow:0 25px 60px rgba(0,0,0,0.25);
+position:relative;
+overflow:hidden;
+padding:80px 60px;
+display:flex;
+align-items:center;
+}
+
+/* Icons */
+.close{
+position:absolute;
+top:20px;
+left:30px;
+font-size:22px;
+}
+
+.menu{
+position:absolute;
+top:20px;
+right:30px;
+font-size:22px;
+}
+
+/* Text */
+.hero-content{
+width:50%;
+z-index:5;
+}
+
+.hero-content h1{
+font-family:'Permanent Marker',cursive;
+font-size:42px;
+line-height:1.4;
+}
+
+.hero-content button{
+margin-top:25px;
+background:#f6b93b;
+border:3px solid #fff;
+padding:12px 28px;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+box-shadow:0 5px 0 #d89c20;
+}
+
+/* RED SHAPE */
+.red-shape{
+position:absolute;
+right:140px;
+bottom:0;
+width:230px;
+height:360px;
+
+border-radius:120px;
+z-index:1;
+}
+
+/* MODEL */
+.model,
+.shadow1,
+.shadow2{
+position:absolute;
+bottom:0;
+right:60px;
+}
+
+.model img,
+.shadow1 img,
+.shadow2 img{
+height:420px;
+}
+
+/* SHADOW LAYERS */
+.shadow1{
+transform:translateX(20px);
+opacity:0.4;
+z-index:2;
+}
+
+.shadow2{
+transform:translateX(40px);
+opacity:0.2;
+z-index:2;
+}
+
+.model{
+z-index:3;
+}
+
+/* STARS */
+.star{
+position:absolute;
+font-size:14px;
+color:#f6b93b;
+}
+
+.star1{top:70px; right:260px;}
+.star2{top:160px; right:160px;}
+.star3{bottom:80px; left:420px;}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="close">✖</div>
+<div class="menu">☰</div>
+
+<div class="hero-content">
+<h1>
+It's Time To Stand<br>
+Out From The<br>
+Crowd.
+</h1>
+<button>New Collection</button>
+</div>
+
+<div class="red-shape"></div>
+
+<div class="shadow2">
+<img src="model1.jfif">
+</div>
+
+<div class="shadow1">
+<img src="model1.jfif">
+</div>
+
+<div class="model">
+<img src="model1.jfif">
+</div>
+
+<div class="star star1">✦</div>
+<div class="star star2">✦</div>
+<div class="star star3">✦</div>
+
+</div>
+
+</body>
+</html>
