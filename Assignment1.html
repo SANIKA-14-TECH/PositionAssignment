@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position Playground</title>
+    <style>
+        body {
+            height: 1500px; /* Added height to allow scrolling and see fixed position */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 500px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* Box 1: Static */
+        .box1 {
+            position: static;
+            background-color: red;
+        }
+
+        /* Box 2: Relative */
+        .box2 {
+            position: relative;
+            background-color: blue;
+            top: 50px;
+            left: 50px;
+            z-index: 2; /* This box overlaps others */
+        }
+
+        /* Box 3: Absolute */
+        .box3 {
+            position: absolute;
+            background-color: green;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1;
+        }
+
+        /* Box 4: Fixed */
+        .box4 {
+            position: fixed;
+            background-color: purple;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Position Playground Assignment</h1>
+
+    <div class="container">
+        <div class="box box1">
+            Box 1<br>
+            position: static
+        </div>
+
+        <div class="box box2">
+            Box 2<br>
+            position: relative<br>
+            top: 50px, left: 50px
+        </div>
+
+        <div class="box box3">
+            Box 3<br>
+            position: absolute<br>
+            bottom: 20px, right: 20px
+        </div>
+    </div>
+
+    <div class="box box4">
+        Box 4<br>
+        position: fixed<br>
+        bottom: 10px, right: 10px
+    </div>
+
+</body>
+</html>
